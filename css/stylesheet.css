@@ -1,0 +1,368 @@
+/* ===========================
+   Google Fonts: Inter
+   =========================== */
+
+/* ===========================
+   CSS Custom Properties
+   =========================== */
+:root {
+  --color-bg: #f8f9fa;
+  --color-text: #212529;
+  --color-accent: #0d5c8a;
+  --color-accent-hover: #094a72;
+  --color-secondary-bg: #e9ecef;
+  --color-border: #dee2e6;
+  --font-family: 'Inter', sans-serif;
+  --max-width: 800px;
+  --section-padding: 60px 20px;
+  --radius: 8px;
+  --transition: 0.2s ease;
+}
+
+/* ===========================
+   Reset & Base
+   =========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+/* ===========================
+   Utility
+   =========================== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===========================
+   Navigation
+   =========================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* ===========================
+   Hero
+   =========================== */
+.hero {
+  background-color: var(--color-secondary-bg);
+  padding: var(--section-padding);
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.headshot {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 4px solid var(--color-accent);
+  background-color: var(--color-border);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.hero-bio {
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 24px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background-color var(--transition);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-accent-hover);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ===========================
+   Sections — shared
+   =========================== */
+section {
+  padding: var(--section-padding);
+}
+
+section h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+
+section p {
+  margin-bottom: 14px;
+}
+
+/* ===========================
+   About
+   =========================== */
+.about {
+  background-color: var(--color-bg);
+}
+
+/* ===========================
+   Experience
+   =========================== */
+.experience {
+  background-color: var(--color-secondary-bg);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  padding: 24px;
+  border: 1px solid var(--color-border);
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #495057;
+  margin-bottom: 0;
+}
+
+/* ===========================
+   Skills
+   =========================== */
+.skills {
+  background-color: var(--color-bg);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 999px;
+}
+
+/* ===========================
+   Contact
+   =========================== */
+.contact {
+  background-color: var(--color-secondary-bg);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+.site-footer {
+  background-color: var(--color-text);
+  color: #adb5bd;
+  padding: 24px 20px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* ===========================
+   Responsive — Tablet & Up
+   =========================== */
+@media (min-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===========================
+   Responsive — Mobile
+   =========================== */
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 14px;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .headshot {
+    margin: 0 auto;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}

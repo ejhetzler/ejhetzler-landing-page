@@ -3,9 +3,177 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>Ethan Hetzler | Financial Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
 <body>
-  <h1>Hello World</h1>
+
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <span class="nav-brand">Ethan Hetzler</span>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="hero" id="hero">
+      <div class="container hero-inner">
+        <img
+          src="images/headshot.jpg"
+          alt="Ethan Hetzler professional headshot"
+          class="headshot"
+        />
+        <div class="hero-text">
+          <h1>Ethan Hetzler</h1>
+          <p class="tagline">Financial Professional</p>
+          <p class="hero-bio">
+            Incoming financial professional focused on helping young professionals
+            in the Kansas City area build long-term financial confidence.
+          </p>
+          <a href="#contact" class="btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a student at the University of Iowa Tippie College of Business,
+          completing a B.B.A. in Economics and a B.B.A. in Business Analytics
+          and Information Systems, with an anticipated graduation date of May 2026.
+        </p>
+        <p>
+          After graduation, I will be joining Equitable Advisors in Kansas City
+          as a financial advisor. My goal is to work closely with young professionals
+          who are beginning to think seriously about long-term financial planning,
+          investing, and building a strong financial foundation for their future.
+        </p>
+        <p>
+          I believe trust is the foundation of any great client relationship.
+          That is why I focus on clear communication, genuine connection, and
+          delivering advice that is grounded in both data and personal understanding.
+        </p>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="cards">
+
+          <article class="card">
+            <h3>RGA Underwriting Intern</h3>
+            <p>
+              Gained foundational knowledge in life and health insurance while
+              learning about the reinsurance industry. Developed skills in
+              evaluating lives and the factors that influence underwriting
+              decisions, building a strong base for a career in financial services.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Nile C. Kinnick Scholarship Chairman</h3>
+            <p>
+              Led the largest student-run scholarship program at the University
+              of Iowa. Reviewed over 500 applicants, coordinated selection
+              processes, and organized a ceremony for more than 150 attendees,
+              including the university president — demonstrating leadership at scale.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Phi Kappa Psi Recruitment Chairman</h3>
+            <p>
+              Recruited over 80 young men into Phi Kappa Psi and hosted events
+              for 125 or more potential members. This role deepened my ability
+              to build authentic relationships quickly and lead high-stakes
+              outreach efforts effectively.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-tags" role="list">
+          <li class="tag">Communication</li>
+          <li class="tag">Relationship Building</li>
+          <li class="tag">Leadership</li>
+          <li class="tag">Analytical Thinking</li>
+          <li class="tag">Global Financial Markets</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          I am always open to connecting with people who are curious about
+          their financial future. Feel free to reach out by any of the
+          channels below.
+        </p>
+        <ul class="contact-links" role="list">
+          <li>
+            <a href="mailto:ejhetzler@gmail.com" class="contact-link">
+              <span class="contact-icon" aria-hidden="true">✉</span>
+              <span>ejhetzler@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+1XXXXXXXXXX" class="contact-link">
+              <span class="contact-icon" aria-hidden="true">✆</span>
+              <span>Contact by phone</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ethan-hetzler/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              <span class="contact-icon" aria-hidden="true">in</span>
+              <span>LinkedIn Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ejhetzler"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              <span class="contact-icon" aria-hidden="true">&#9651;</span>
+              <span>GitHub Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Ethan Hetzler. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+
 </body>
-</html> 
+</html>
